@@ -1,0 +1,78 @@
+Folder PATH listing
+Volume serial number is 7669-B650
+C:.
+|   README.md
+|   requirements.txt
+|   run.bat
+|   run.sh
+|   setup.py
+|   structure.txt
+|   
++---docs
+|       collection_Robotixx.svg
+|       VertiCoder.svg
+|       
++---vertiencoder
+|   |   train_dt.py
+|   |   train_pretext.py
+|   |   train_swae.py
+|   |   train_vanilla_dt.py
+|   |   __init__.py
+|   |   
+|   +---conf
+|   |       bc_model.yaml
+|   |       dt.yaml
+|   |       fkd_model.yaml
+|   |       ikd_model.yaml
+|   |       swae.yaml
+|   |       transformer.yaml
+|   |       vanilla.yaml
+|   |       
+|   +---config
+|   |   \---env
+|   |           .env
+|   |           
+|   +---data
+|   |   \---train
+|   |           data_train.pkl
+|   |           
+|   +---model
+|   |   |   dataloader.py
+|   |   |   dt_models.py
+|   |   |   swae.py
+|   |   |   tverti.py
+|   |   |   vanilla_models.py
+|   |   |   __init__.py
+|   |   |   
+|   |   \---__pycache__
+|   |           dataloader.cpython-310.pyc
+|   |           swae.cpython-310.pyc
+|   |           tverti.cpython-310.pyc
+|   |           __init__.cpython-310.pyc
+|   |           
+|   +---utils
+|   |   |   helpers.py
+|   |   |   io.py
+|   |   |   loss.py
+|   |   |   nn.py
+|   |   |   robot.py
+|   |   |   stats.py
+|   |   |   vision.py
+|   |   |   __init__.py
+|   |   |   
+|   |   \---__pycache__
+|   |           helpers.cpython-310.pyc
+|   |           io.cpython-310.pyc
+|   |           loss.cpython-310.pyc
+|   |           nn.cpython-310.pyc
+|   |           __init__.cpython-310.pyc
+|   |           
+|   \---__pycache__
+|           __init__.cpython-310.pyc
+|           
+\---vertiencoder.egg-info
+        dependency_links.txt
+        PKG-INFO
+        SOURCES.txt
+        top_level.txt
+        
