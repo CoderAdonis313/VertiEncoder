@@ -1,5 +1,6 @@
 # Folders
 dataset/
+vertiencoder/checkpoint/
 
 # Files
 *.npz
