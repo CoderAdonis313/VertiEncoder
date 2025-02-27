@@ -23,7 +23,7 @@ def save_checkpoint(state: dict, is_best: bool, save_dir: str, name: str):
         print(
             "Checkpoint Directory does not exist! Making directory {}".format(save_dir)
         )
-        os.mkdir(save_dir)
+        os.makedirs(save_dir)
     else:
         print(f"Checkpoint Directory exists! Saving {name} in {save_dir}")
     torch.save(state, filepath)
