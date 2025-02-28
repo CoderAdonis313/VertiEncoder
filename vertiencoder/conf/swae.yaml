@@ -13,7 +13,7 @@ train_params:
 # Logger parameters
 logger:
   workspace: general # workspace name
-  project: vertiencoder # project name
+  project: server-vertiencoder # project name
   experiment_name: ae-1- # name of the experiment
   tags: "ae train"
   resume: False # (boolean) whether to resume training or not
