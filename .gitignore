@@ -4,5 +4,5 @@ vertiencoder/checkpoint/
 
 # Files
 *.npz
-*.npy
-
+# *.npy
+.env
