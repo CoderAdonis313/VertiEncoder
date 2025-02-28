@@ -70,4 +70,4 @@ def calculate_stats(root: str, f_size: int = 7, height_diff: int = 0.5):
 
 
 if __name__ == "__main__":
-    calculate_stats("vertiencoder/data/train/data_total.pkl")
+    calculate_stats("vertiencoder/data/train/data_train.pkl")
