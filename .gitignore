@@ -6,3 +6,6 @@ vertiencoder/checkpoint/
 *.npz
 # *.npy
 .env
+*.pyc
+*.tar
+*.log
