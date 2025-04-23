@@ -42,7 +42,7 @@ dataset:
   f_size: 7 # filter size to smooth cmd
   height_diff: 0.5 # difference between min and max height with respect to robot
   stats: vertiencoder/data/train/stats.pkl
-  task: fkd # downstream task. Options: ['fkd', 'bc', 'ikd']
+  task: ikd # downstream task. Options: ['fkd', 'bc', 'ikd']
 
 # Validation dataset parameters/ only change parameters that are different from train data
 val_dataset:
