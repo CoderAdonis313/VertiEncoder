@@ -38,7 +38,7 @@ dataloader:
 
 # Train dataset parameters
 dataset:
-  root: vertiencoder/data/data_train.pkl # where data resides
+  root: vertiencoder/data/train/data_train.pkl # where data resides
   train: True # train data
   block_size: 20 # block size for the transformer
   f_size: 7 # filter size to smooth cmd
