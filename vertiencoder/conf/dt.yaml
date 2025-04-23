@@ -71,7 +71,7 @@ directory:
 model:
   finetune: True
   transformer: ${from_yaml:vertiencoder/conf/transformer.yaml, model} # get the 'model' info from the transformer config
-  transformer_weight: vertiencoder/checkpoint/vertiencoder-13/vertiencoder-13-E300.tar
+  transformer_weight: vertiencoder/checkpoint/transformers/vertiencoder-best.tar
   bc_model: ${from_yaml:vertiencoder/conf/bc_model.yaml, model}
   fkd_model: ${from_yaml:vertiencoder/conf/fkd_model.yaml, model}
   ikd_model: ${from_yaml:vertiencoder/conf/ikd_model.yaml, model}

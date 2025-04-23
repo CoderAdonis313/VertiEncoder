@@ -60,7 +60,7 @@ directory:
 # model parameters
 model:
   swae: ${from_yaml:vertiencoder/conf/swae.yaml, model} # get the 'model' info from the swae config
-  swae_weight: vertiencoder/checkpoint/ae-1/ae-best.tar
+  swae_weight: vertiencoder/checkpoint/swae/ae-best.tar
   transformer:
     num_layers: 4
     block_size: ${dataset.block_size}
