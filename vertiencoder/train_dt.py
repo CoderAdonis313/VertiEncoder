@@ -399,8 +399,13 @@ class Learner:
         )
         # defining the dataset interface
         dataset = TvertiDownStream(**self.cfg.dataset)
-        self.cfg.dataset.update(self.cfg.val_dataset)
-        val_dataset = TvertiDownStream(**self.cfg.dataset)
+        
+        #################################
+        # DEBUG
+        # self.cfg.dataset.update(self.cfg.val_dataset)
+        val_dataset = TvertiDownStream(**self.cfg.val_dataset)
+        #################################
+        
         # creating dataloader
         data = DataLoader(dataset, **self.cfg.dataloader)
 
