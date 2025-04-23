@@ -50,11 +50,11 @@ dataset:
 # Validation dataset parameters/ only change parameters that are different from train data
 val_dataset:
   train: False # val data
-  root: vertiencoder/data/val/data_val.pkl
-  task: ${dataset.task} # downstream task. Options: ['fkd', 'bc', 'ikd']
-  stats: vertiencoder/data/val/stats.pkl
   ###################
   # DEBUG
+  root: vertiencoder/data/train/data_train.pkl
+  task: ${dataset.task} # downstream task. Options: ['fkd', 'bc', 'ikd']
+  stats: vertiencoder/data/train/stats.pkl
   block_size: 20 # block size for the transformer
   f_size: 7 # filter size to smooth cmd
   height_diff: 0.5 # difference between min and max height with respect to robot
