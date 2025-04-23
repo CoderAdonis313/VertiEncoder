@@ -58,9 +58,12 @@ directory:
 
 # model parameters
 model:
-  bc_model: ${from_yaml:vertiencoder/conf/deployment-vanilla.yaml, bc}
-  fkd_model: ${from_yaml:vertiencoder/conf/deployment-vanilla.yaml, fkd}
-  ikd_model: ${from_yaml:vertiencoder/conf/deployment-vanilla.yaml, ikd}
+  #########################
+  # DEBUG 
+  bc_model: ${from_yaml:vertiencoder/conf/bc_model.yaml, model}
+  fkd_model: ${from_yaml:vertiencoder/conf/fkd_model.yaml, model}
+  ikd_model: ${from_yaml:vertiencoder/conf/ikd_model.yaml, model}
+  #########################
 #  action_encoder:
 #    latent_dim: ${model.transformer.action_encoder.latent_dim}
 #    in_dim: ${model.transformer.action_encoder.in_dim}
