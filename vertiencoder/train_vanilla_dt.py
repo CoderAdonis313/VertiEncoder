@@ -343,11 +343,6 @@ class Learner:
 
 
 if __name__ == "__main__":
-    ##############################
-    # DEBUG
-    torch.cuda.empty_cache()
-    ##############################
-
     parser = argparse.ArgumentParser()
     parser.add_argument("--conf", default="conf/dt", type=str)
     args = parser.parse_args()

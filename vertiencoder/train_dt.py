@@ -404,7 +404,6 @@ class Learner:
         # DEBUG
         # self.cfg.dataset.update(self.cfg.val_dataset)
         val_dataset = TvertiDownStream(**self.cfg.val_dataset)
-        print(val_dataset)
         #################################
         
         # creating dataloader
