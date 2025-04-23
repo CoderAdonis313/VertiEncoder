@@ -2,7 +2,6 @@ model:
 ################################
 # DEBUG
   dims: [64,32,16]
-  dims: [64,32,16]
   act: leakyrelu
   l_act: False
   norm: ln
