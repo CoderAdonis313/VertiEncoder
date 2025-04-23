@@ -31,7 +31,7 @@ logger:
 # Dataloader parameters
 dataloader:
   num_workers: 12 # Allowing multi-processing
-  batch_size: 512
+  batch_size: 128
   shuffle: True # whether to shuffle data or not
   pin_memory: True # use pageable memory or pinned memory (https://developer.nvidia.com/blog/how-optimize-data-transfers-cuda-cc/)
   prefetch_factor: 8

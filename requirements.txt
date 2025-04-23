@@ -59,3 +59,4 @@ urllib3==2.2.2
 wrapt==1.16.0
 wurlitzer==3.1.1
 einops==0.8.0
+scikit-learn==1.6.1
