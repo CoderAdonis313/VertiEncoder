@@ -35,7 +35,7 @@ dataloader:
   shuffle: True # whether to shuffle data or not
   pin_memory: True # use pageable memory or pinned memory (https://developer.nvidia.com/blog/how-optimize-data-transfers-cuda-cc/)
   prefetch_factor: 8
-  drop_last: True
+  drop_last: False
 
 # Train dataset parameters
 dataset:
