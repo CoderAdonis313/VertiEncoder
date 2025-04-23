@@ -308,11 +308,6 @@ class TvertiDownStream(TvertiDatasetBase):
         self.task = task
 
     def __len__(self):
-        ##################
-        # DEBUG
-        print(len(self.metadata["cmd_vel"]), self.pred_len,  self.block_size)
-        ##################
-
         return (
             len(self.metadata["cmd_vel"]) - self.pred_len - self.block_size
         )
