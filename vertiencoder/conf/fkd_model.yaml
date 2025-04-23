@@ -2,15 +2,14 @@ model:
 ################################
 # DEBUG
   dims: [64,32,16]
+  dims: [64,32,16]
+  act: leakyrelu
+  l_act: False
+  norm: ln
+  dropout: 0.2
+  bias: False
 ################################
 
-  fc:
-    dims: [64,32,16]
-    act: leakyrelu
-    l_act: False
-    norm: ln
-    dropout: 0.2
-    bias: False
   pose:
     dims: [8, 16]
     act: tanh
