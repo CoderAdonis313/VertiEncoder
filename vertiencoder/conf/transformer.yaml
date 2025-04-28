@@ -31,11 +31,11 @@ logger:
 # Dataloader parameters
 dataloader:
   num_workers: 12 # Allowing multi-processing
-  batch_size: 512
+  batch_size: 128
   shuffle: True # whether to shuffle data or not
   pin_memory: True # use pageable memory or pinned memory (https://developer.nvidia.com/blog/how-optimize-data-transfers-cuda-cc/)
   prefetch_factor: 8
-  drop_last: True
+  drop_last: False
 
 # Train dataset parameters
 dataset:
@@ -60,7 +60,7 @@ directory:
 # model parameters
 model:
   swae: ${from_yaml:vertiencoder/conf/swae.yaml, model} # get the 'model' info from the swae config
-  swae_weight: vertiencoder/checkpoint/ae-1/ae-best.tar
+  swae_weight: vertiencoder/checkpoint/swae/ae-best.tar
   transformer:
     num_layers: 4
     block_size: ${dataset.block_size}
