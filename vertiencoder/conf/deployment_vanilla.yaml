@@ -1,11 +1,10 @@
 bc:
-  model:
-    dims: [64,32,16]
-    act: leakyrelu
-    l_act: False
-    norm: ln # set to False to make it false
-    dropout: 0.6
-    bias: False
+  dims: [64,32,16]
+  act: leakyrelu
+  l_act: False
+  norm: ln # set to False to make it false
+  dropout: 0.6
+  bias: False
 
 fkd:
   dims: [64,32,16]
@@ -16,18 +15,17 @@ fkd:
   bias: False
 
 ikd:
-  model:
-    pose:
-      dims: [64,32,16]
-      act: leakyrelu
-      l_act: False
-      norm: ln
-      dropout: 0.2
-      bias: False
-    fc:
-      dims: [256,128,64,32,16]
-      act: tanh
-      l_act: False
-      norm: ln
-      dropout: 0.2
-      bias: False
+  pose:
+    dims: [64,32,16]
+    act: leakyrelu
+    l_act: False
+    norm: ln
+    dropout: 0.2
+    bias: False
+  fc:
+    dims: [256,128,64,32,16]
+    act: tanh
+    l_act: False
+    norm: ln
+    dropout: 0.2
+    bias: False
