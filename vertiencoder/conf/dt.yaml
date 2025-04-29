@@ -38,14 +38,14 @@ dataloader:
 
 # Train dataset parameters
 dataset:
-  root: vertiencoder/data/data_train.pkl # where data resides
+  root: vertiencoder/data/train/data_train.pkl # where data resides
   train: True # train data
   block_size: 20 # block size for the transformer
   f_size: 7 # filter size to smooth cmd
   height_diff: 0.5 # difference between min and max height with respect to robot
   stats: vertiencoder/data/train/stats.pkl
   pred_len: 1 # prediction length
-  task: fkd # downstream task. Options: ['fkd', 'bc', 'ikd']
+  task: bc # downstream task. Options: ['fkd', 'bc', 'ikd']
 
 # Validation dataset parameters/ only change parameters that are different from train data
 val_dataset:
@@ -63,7 +63,7 @@ directory:
 model:
   finetune: True
   transformer: ${from_yaml:vertiencoder/conf/transformer.yaml, model} # get the 'model' info from the transformer config
-  transformer_weight: vertiencoder/checkpoint/vertiencoder-13/vertiencoder-13-E300.tar
+  transformer_weight: vertiencoder/checkpoint/transformers/vertiencoder-best.tar
   bc_model: ${from_yaml:vertiencoder/conf/bc_model.yaml, model}
   fkd_model: ${from_yaml:vertiencoder/conf/fkd_model.yaml, model}
   ikd_model: ${from_yaml:vertiencoder/conf/ikd_model.yaml, model}
