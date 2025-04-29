@@ -31,7 +31,7 @@ logger:
 # Dataloader parameters
 dataloader:
   num_workers: 10 # Allowing multi-processing
-  batch_size: 32
+  batch_size: 256
   shuffle: True # whether to shuffle data or not
   pin_memory: True # use pageable memory or pinned memory (https://developer.nvidia.com/blog/how-optimize-data-transfers-cuda-cc/)
   prefetch_factor: 4
@@ -56,14 +56,14 @@ val_dataset:
 # directories
 directory:
   model_name: model-name # file name for saved model. To be set automatically, no need to change
-  save: vertiencoder/checkpoint
-  load: vertiencoder/checkpoint/model-name-best.pt
+  save: vertiencoder/checkpoint/downstream # where to save the model
+  load: vertiencoder/checkpoint/downstream/model-name-best.pt # where to load the model from
 
 # model parameters
 model:
   finetune: True
   transformer: ${from_yaml:vertiencoder/conf/transformer.yaml, model} # get the 'model' info from the transformer config
-  transformer_weight: vertiencoder/checkpoint/transformers/vertiencoder-best.tar
+  transformer_weight: vertiencoder/checkpoint/transformer/vertiencoder-best.tar
   bc_model: ${from_yaml:vertiencoder/conf/bc_model.yaml, model}
   fkd_model: ${from_yaml:vertiencoder/conf/fkd_model.yaml, model}
   ikd_model: ${from_yaml:vertiencoder/conf/ikd_model.yaml, model}
