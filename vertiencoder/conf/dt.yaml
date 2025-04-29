@@ -45,7 +45,7 @@ dataset:
   height_diff: 0.5 # difference between min and max height with respect to robot
   stats: vertiencoder/data/train/stats.pkl
   pred_len: 1 # prediction length
-  task: bc # downstream task. Options: ['fkd', 'bc', 'ikd']
+  task: reconstruction # downstream task. Options: ['fkd', 'bc', 'ikd']
 
 # Validation dataset parameters/ only change parameters that are different from train data
 val_dataset:
