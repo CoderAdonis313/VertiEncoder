@@ -51,6 +51,7 @@ dataset:
 val_dataset:
   train: False # val data
   root: vertiencoder/data/val/data_val.pkl
+  stats: vertiencoder/data/val/stats.pkl
   task: ${dataset.task} # downstream task. Options: ['fkd', 'bc', 'ikd']
 
 # directories
