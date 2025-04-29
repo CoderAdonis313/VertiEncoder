@@ -42,7 +42,7 @@ dataset:
   f_size: 7 # filter size to smooth cmd
   height_diff: 0.5 # difference between min and max height with respect to robot
   stats: vertiencoder/data/train/stats.pkl
-  task: bc # downstream task. Options: ['fkd', 'bc', 'ikd']
+  task: fkd # downstream task. Options: ['fkd', 'bc', 'ikd']
 
 # Validation dataset parameters/ only change parameters that are different from train data
 val_dataset:
@@ -58,9 +58,9 @@ directory:
 
 # model parameters
 model:
-  bc_model: ${from_yaml:vertiencoder/conf/deployment-vanilla.yaml, bc}
-  fkd_model: ${from_yaml:vertiencoder/conf/deployment-vanilla.yaml, fkd}
-  ikd_model: ${from_yaml:vertiencoder/conf/deployment-vanilla.yaml, ikd}
+  bc_model: ${from_yaml:vertiencoder/conf/deployment_vanilla.yaml, bc}
+  fkd_model: ${from_yaml:vertiencoder/conf/deployment_vanilla.yaml, fkd}
+  ikd_model: ${from_yaml:vertiencoder/conf/deployment_vanilla.yaml, ikd}
 #  action_encoder:
 #    latent_dim: ${model.transformer.action_encoder.latent_dim}
 #    in_dim: ${model.transformer.action_encoder.in_dim}
