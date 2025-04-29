@@ -45,7 +45,7 @@ dataset:
   height_diff: 0.5 # difference between min and max height with respect to robot
   stats: vertiencoder/data/train/stats.pkl
   pred_len: 1 # prediction length
-  task: bc # downstream task. Options: ['fkd', 'bc', 'ikd']
+  task: fkd # downstream task. Options: ['fkd', 'bc', 'ikd']
 
 # Validation dataset parameters/ only change parameters that are different from train data
 val_dataset:
@@ -66,7 +66,7 @@ directory:
 
 # model parameters
 model:
-  finetune: True
+  finetune: False
   transformer: ${from_yaml:vertiencoder/conf/transformer.yaml, model} # get the 'model' info from the transformer config
   transformer_weight: vertiencoder/checkpoint/transformer/vertiencoder-best.tar
   bc_model: ${from_yaml:vertiencoder/conf/bc_model.yaml, model}
