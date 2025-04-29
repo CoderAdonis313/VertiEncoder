@@ -1,0 +1,38 @@
+2025-04-28 20:53:54 - Starting experiment dt1-bc-PL1-finetuned-04-28-20-53!
+2025-04-28 20:53:54 - INITIALIZING the logger!
+2025-04-28 20:53:54 - INITIALIZING the device!
+Performing all the operations on CUDA device 0.
+20:53:54 - Training BC task!
+20:53:54 - INITIALIZING the train and val dataloaders!
+/home/data3/atembulk/verti/lib/python3.12/site-packages/torch/storage.py:414: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  return torch.load(io.BytesIO(b))
+Training consists of 2352 samples, and validation consists of 555 samples.
+20:53:54 - INITIALIZING the model!
+/home/data3/atembulk/dev/VertiEncoder/vertiencoder/model/tverti.py:130: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  swae_weight = torch.load(cfg.swae_weight, map_location="cpu")["model"]
+/home/data3/atembulk/verti/lib/python3.12/site-packages/torch/nn/modules/transformer.py:307: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
+/home/data3/atembulk/dev/VertiEncoder/vertiencoder/train_dt.py:343: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  pretext_weight = torch.load(
+2025-04-28 20:53:54 - INITIALIZING the optimizer!
+2025-04-28 20:53:54 - Number of parameters: 2.71M
+2025-04-28 20:53:54 - Number of trainable parameters: 0.88M
+Epoch 001/050, training:   0%|          | 0/10 [00:00<?, ?it/s]Epoch 001/050, training:   0%|          | 0/10 [00:01<?, ?it/s, Grad_Norm=1, Time=0.00188, loss=279]Epoch 001/050, training:  10%|█         | 1/10 [00:01<00:11,  1.23s/it, Grad_Norm=1, Time=0.00188, loss=279]Epoch 001/050, training:  10%|█         | 1/10 [00:01<00:11,  1.23s/it, Grad_Norm=1, Time=0.000202, loss=244]Epoch 001/050, training:  10%|█         | 1/10 [00:01<00:11,  1.23s/it, Grad_Norm=1, Time=0.000195, loss=232]Epoch 001/050, training:  30%|███       | 3/10 [00:01<00:02,  2.79it/s, Grad_Norm=1, Time=0.000195, loss=232]Epoch 001/050, training:  30%|███       | 3/10 [00:01<00:02,  2.79it/s, Grad_Norm=1, Time=0.000194, loss=244]Epoch 001/050, training:  30%|███       | 3/10 [00:01<00:02,  2.79it/s, Grad_Norm=1, Time=0.000193, loss=207]Epoch 001/050, training:  30%|███       | 3/10 [00:01<00:02,  2.79it/s, Grad_Norm=1, Time=0.000192, loss=228]Epoch 001/050, training:  60%|██████    | 6/10 [00:01<00:00,  5.92it/s, Grad_Norm=1, Time=0.000192, loss=228]Epoch 001/050, training:  60%|██████    | 6/10 [00:01<00:00,  5.92it/s, Grad_Norm=1, Time=0.000193, loss=246]Epoch 001/050, training:  60%|██████    | 6/10 [00:01<00:00,  5.92it/s, Grad_Norm=1, Time=0.000192, loss=245]Epoch 001/050, training:  60%|██████    | 6/10 [00:01<00:00,  5.92it/s, Grad_Norm=1, Time=0.000192, loss=244]Epoch 001/050, training:  90%|█████████ | 9/10 [00:01<00:00,  8.84it/s, Grad_Norm=1, Time=0.000192, loss=244]Epoch 001/050, training:  90%|█████████ | 9/10 [00:01<00:00,  8.84it/s, Grad_Norm=1, Time=0.000267, loss=277]Epoch 001/050, training: 100%|██████████| 10/10 [00:01<00:00,  5.77it/s, Grad_Norm=1, Time=0.000267, loss=277]
+Epoch 001/050, validating:   0%|          | 0/3 [00:00<?, ?it/s]Epoch 001/050, validating:   0%|          | 0/3 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/data3/atembulk/dev/VertiEncoder/vertiencoder/train_dt.py", line 492, in <module>
+    learner.train()
+  File "/home/data3/atembulk/dev/VertiEncoder/vertiencoder/train_dt.py", line 135, in train
+    val_loss, t = self.validate()
+                  ^^^^^^^^^^^^^^^
+  File "/home/data3/atembulk/dev/VertiEncoder/vertiencoder/utils/helpers.py", line 211, in wrapper_fn
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/data3/atembulk/verti/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/data3/atembulk/dev/VertiEncoder/vertiencoder/train_dt.py", line 321, in validate
+    cmd_vel[:, block_size + step_i] = pred
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: index 20 is out of bounds for dimension 1 with size 20
+Done.

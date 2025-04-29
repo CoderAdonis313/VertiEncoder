@@ -1,0 +1,166 @@
+2025-04-28 21:18:18 - Starting experiment vanilla-1-fkd-04-28-21-18!
+2025-04-28 21:18:18 - INITIALIZING the logger!
+COMET INFO: Experiment is live on comet.com https://www.comet.com/coder-adonis/server-vertiencoder/26e1139de698457f86752ff32816ae22
+
+2025-04-28 21:18:19 - INITIALIZING the device!
+Performing all the operations on CUDA device 0.
+21:18:19 - Training FKD task!
+21:18:19 - INITIALIZING the train and val dataloaders!
+/home/data3/atembulk/verti/lib/python3.12/site-packages/torch/storage.py:414: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  return torch.load(io.BytesIO(b))
+Training consists of 2372 samples, and validation consists of 573 samples.
+21:18:19 - INITIALIZING the model!
+Traceback (most recent call last):
+  File "/home/data3/atembulk/dev/VertiEncoder/vertiencoder/train_vanilla_dt.py", line 350, in <module>
+    learner = Learner(cfg_path)
+              ^^^^^^^^^^^^^^^^^
+  File "/home/data3/atembulk/dev/VertiEncoder/vertiencoder/train_vanilla_dt.py", line 67, in __init__
+    self.model = self.init_model(self.cfg.dataset.task)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/data3/atembulk/dev/VertiEncoder/vertiencoder/train_vanilla_dt.py", line 233, in init_model
+    dt_model = FKD(self.cfg.model.fkd_model)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/data3/atembulk/dev/VertiEncoder/vertiencoder/model/vanilla_models.py", line 20, in __init__
+    cfg.dims.insert(0, 512)
+    ^^^^^^^^
+  File "/home/data3/atembulk/verti/lib/python3.12/site-packages/omegaconf/dictconfig.py", line 355, in __getattr__
+    self._format_and_raise(
+  File "/home/data3/atembulk/verti/lib/python3.12/site-packages/omegaconf/base.py", line 231, in _format_and_raise
+    format_and_raise(
+  File "/home/data3/atembulk/verti/lib/python3.12/site-packages/omegaconf/_utils.py", line 899, in format_and_raise
+    _raise(ex, cause)
+  File "/home/data3/atembulk/verti/lib/python3.12/site-packages/omegaconf/_utils.py", line 797, in _raise
+    raise ex.with_traceback(sys.exc_info()[2])  # set env var OC_CAUSE=1 for full trace
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/data3/atembulk/verti/lib/python3.12/site-packages/omegaconf/dictconfig.py", line 351, in __getattr__
+    return self._get_impl(
+           ^^^^^^^^^^^^^^^
+  File "/home/data3/atembulk/verti/lib/python3.12/site-packages/omegaconf/dictconfig.py", line 442, in _get_impl
+    node = self._get_child(
+           ^^^^^^^^^^^^^^^^
+  File "/home/data3/atembulk/verti/lib/python3.12/site-packages/omegaconf/basecontainer.py", line 73, in _get_child
+    child = self._get_node(
+            ^^^^^^^^^^^^^^^
+  File "/home/data3/atembulk/verti/lib/python3.12/site-packages/omegaconf/dictconfig.py", line 480, in _get_node
+    raise ConfigKeyError(f"Missing key {key!s}")
+omegaconf.errors.ConfigAttributeError: Missing key dims
+    full_key: model.fkd_model.dims
+    object_type=dict
+COMET INFO: ---------------------------------------------------------------------------------------
+COMET INFO: Comet.ml Experiment Summary
+COMET INFO: ---------------------------------------------------------------------------------------
+COMET INFO:   Data:
+COMET INFO:     display_summary_level : 1
+COMET INFO:     name                  : vanilla-1-fkd-04-28-21-18
+COMET INFO:     url                   : https://www.comet.com/coder-adonis/server-vertiencoder/26e1139de698457f86752ff32816ae22
+COMET INFO:   Others:
+COMET INFO:     Name            : vanilla-1-fkd-04-28-21-18
+COMET INFO:     hasNestedParams : True
+COMET INFO:   Parameters:
+COMET INFO:     adamw|amsgrad                            : False
+COMET INFO:     adamw|betas                              : [0.9, 0.999]
+COMET INFO:     adamw|eps                                : 1e-08
+COMET INFO:     adamw|lr                                 : 0.0005
+COMET INFO:     adamw|weight_decay                       : 0.05
+COMET INFO:     adam|amsgrad                             : False
+COMET INFO:     adam|betas                               : [0.9, 0.999]
+COMET INFO:     adam|eps                                 : 1e-08
+COMET INFO:     adam|lr                                  : 0.0005
+COMET INFO:     adam|weight_decay                        : 0
+COMET INFO:     dataloader|batch_size                    : 256
+COMET INFO:     dataloader|num_workers                   : 8
+COMET INFO:     dataloader|pin_memory                    : False
+COMET INFO:     dataloader|shuffle                       : True
+COMET INFO:     dataset|f_size                           : 7
+COMET INFO:     dataset|height_diff                      : 0.5
+COMET INFO:     dataset|root                             : vertiencoder/data/train/data_train.pkl
+COMET INFO:     dataset|stats                            : vertiencoder/data/train/stats.pkl
+COMET INFO:     dataset|task                             : fkd
+COMET INFO:     dataset|train                            : True
+COMET INFO:     directory|load                           : vertiencoder/checkpoint/vanilla/model-name-best.pt
+COMET INFO:     directory|model_name                     : vanilla-1-fkd-04-28-21-18
+COMET INFO:     directory|save                           : vertiencoder/checkpoint/vanilla/vanilla-1-fkd-04-28-21-18
+COMET INFO:     init_model|gain                          : 1.0
+COMET INFO:     init_model|high                          : 1.0
+COMET INFO:     init_model|low                           : 0.0
+COMET INFO:     init_model|mean                          : 0.0
+COMET INFO:     init_model|method                        : kaiming_normal
+COMET INFO:     init_model|mode                          : fan_in
+COMET INFO:     init_model|nonlinearity                  : leaky_relu
+COMET INFO:     init_model|std                           : 0.05
+COMET INFO:     logger|auto_histogram_activation_logging : True
+COMET INFO:     logger|auto_histogram_gradient_logging   : True
+COMET INFO:     logger|auto_histogram_weight_logging     : True
+COMET INFO:     logger|disabled                          : False
+COMET INFO:     logger|experiment_key                    : 
+COMET INFO:     logger|experiment_name                   : vanilla-1-fkd-04-28-21-18
+COMET INFO:     logger|log_env_details                   : False
+COMET INFO:     logger|offline_directory                 : ./logs
+COMET INFO:     logger|online                            : True
+COMET INFO:     logger|project                           : server-vertiencoder
+COMET INFO:     logger|resume                            : False
+COMET INFO:     logger|tags                              : ae train
+COMET INFO:     logger|upload_model                      : False
+COMET INFO:     logger|workspace                         : mhnazeri
+COMET INFO:     model|bc_model|model|act                 : leakyrelu
+COMET INFO:     model|bc_model|model|bias                : False
+COMET INFO:     model|bc_model|model|dims                : [64, 32, 16]
+COMET INFO:     model|bc_model|model|dropout             : 0.6
+COMET INFO:     model|bc_model|model|l_act               : False
+COMET INFO:     model|bc_model|model|norm                : ln
+COMET INFO:     model|fkd_model|model|fc|act             : leakyrelu
+COMET INFO:     model|fkd_model|model|fc|bias            : False
+COMET INFO:     model|fkd_model|model|fc|dims            : [64, 32, 16]
+COMET INFO:     model|fkd_model|model|fc|dropout         : 0.2
+COMET INFO:     model|fkd_model|model|fc|l_act           : False
+COMET INFO:     model|fkd_model|model|fc|norm            : ln
+COMET INFO:     model|fkd_model|model|pose|act           : tanh
+COMET INFO:     model|fkd_model|model|pose|bias          : False
+COMET INFO:     model|fkd_model|model|pose|dims          : [8, 16]
+COMET INFO:     model|fkd_model|model|pose|dropout       : 0.6
+COMET INFO:     model|fkd_model|model|pose|l_act         : True
+COMET INFO:     model|fkd_model|model|pose|norm          : ln
+COMET INFO:     model|ikd_model|model|fc|act             : tanh
+COMET INFO:     model|ikd_model|model|fc|bias            : False
+COMET INFO:     model|ikd_model|model|fc|dims            : [256, 128, 64, 32, 16]
+COMET INFO:     model|ikd_model|model|fc|dropout         : 0.2
+COMET INFO:     model|ikd_model|model|fc|l_act           : False
+COMET INFO:     model|ikd_model|model|fc|norm            : ln
+COMET INFO:     model|ikd_model|model|pose|act           : leakyrelu
+COMET INFO:     model|ikd_model|model|pose|bias          : False
+COMET INFO:     model|ikd_model|model|pose|dims          : [64, 32, 16]
+COMET INFO:     model|ikd_model|model|pose|dropout       : 0.2
+COMET INFO:     model|ikd_model|model|pose|l_act         : False
+COMET INFO:     model|ikd_model|model|pose|norm          : ln
+COMET INFO:     rmsprop|alpha                            : 0.99
+COMET INFO:     rmsprop|centered                         : False
+COMET INFO:     rmsprop|eps                              : 1e-08
+COMET INFO:     rmsprop|lr                               : 0.001
+COMET INFO:     rmsprop|momentum                         : 0
+COMET INFO:     rmsprop|weight_decay                     : 0
+COMET INFO:     sgd|dampening                            : 0
+COMET INFO:     sgd|lr                                   : 0.001
+COMET INFO:     sgd|momentum                             : 0
+COMET INFO:     sgd|nesterov                             : False
+COMET INFO:     sgd|weight_decay                         : 0
+COMET INFO:     train_len                                : 2372
+COMET INFO:     train_params|compile                     : True
+COMET INFO:     train_params|debug                       : False
+COMET INFO:     train_params|device                      : cuda:0
+COMET INFO:     train_params|epochs                      : 50
+COMET INFO:     train_params|grad_clipping               : 1.0
+COMET INFO:     train_params|optimizer                   : adamw
+COMET INFO:     train_params|save_every                  : 10
+COMET INFO:     train_params|seed                        : 42
+COMET INFO:     train_params|start_saving_best           : 1
+COMET INFO:     val_dataset|root                         : vertiencoder/data/val/data_val.pkl
+COMET INFO:     val_dataset|task                         : fkd
+COMET INFO:     val_dataset|train                        : False
+COMET INFO:     val_len                                  : 573
+COMET INFO:   Uploads:
+COMET INFO:     filename                 : 1
+COMET INFO:     git metadata             : 1
+COMET INFO:     git-patch (uncompressed) : 1 (1.19 KB)
+COMET INFO:     source_code              : 2 (20.16 KB)
+COMET INFO: 
+Done.
