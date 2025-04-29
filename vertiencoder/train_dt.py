@@ -361,7 +361,7 @@ class Learner:
             dt_model.apply(init_weights(**self.cfg.init_model))
             print(dt_model)
 
-        elif task == "bc":
+        elif task == "bc" or task == "reconstruction":
             self.cfg.model.bc_model.dims.insert(
                 0, self.cfg.model.transformer.transformer_layer.d_model
             )
