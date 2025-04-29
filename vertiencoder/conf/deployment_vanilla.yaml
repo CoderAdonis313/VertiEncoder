@@ -8,20 +8,12 @@ bc:
     bias: False
 
 fkd:
-  fc:
-    dims: [64,32,16]
-    act: leakyrelu
-    l_act: False
-    norm: ln
-    dropout: 0.2
-    bias: False
-  pose:
-    dims: [8, 16]
-    act: tanh
-    l_act: True
-    norm: ln
-    dropout: 0.6
-    bias: False
+  dims: [64,32,16]
+  act: leakyrelu
+  l_act: False
+  norm: ln
+  dropout: 0.2
+  bias: False
 
 ikd:
   model:
