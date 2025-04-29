@@ -51,8 +51,8 @@ val_dataset:
 # directories
 directory:
   model_name: model-name # file name for saved model. To be set automatically, no need to change
-  save: vertiencoder/checkpoint/swae
-  load: vertiencoder/checkpoint/swae/model-name-best.pt
+  save: vertiencoder/checkpoint/swae_train
+  load: vertiencoder/checkpoint/swae_train/model-name-best.pt
 
 # model parameters
 model:

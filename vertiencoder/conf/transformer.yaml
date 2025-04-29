@@ -54,8 +54,8 @@ val_dataset:
 # directories
 directory:
   model_name: model-name # file name for saved model. To be set automatically, no need to change
-  save: vertiencoder/checkpoint/transformer
-  load: vertiencoder/checkpoint/transformer/model-name-best.tar
+  save: vertiencoder/checkpoint/transformer_train
+  load: vertiencoder/checkpoint/transformer_train/model-name-best.tar
 
 # model parameters
 model:
