@@ -1,0 +1,431 @@
+2025-04-29 12:25:15 - Starting experiment vanilla-1-ikd-04-29-12-25!
+2025-04-29 12:25:15 - INITIALIZING the logger!
+COMET INFO: Experiment is live on comet.com https://www.comet.com/coder-adonis/server-vertiencoder/2da80080d97f4841bc7e4e47b0619b49
+
+2025-04-29 12:25:16 - INITIALIZING the device!
+Performing all the operations on CUDA device 0.
+12:25:16 - Training IKD task!
+12:25:16 - INITIALIZING the train and val dataloaders!
+/home/data3/atembulk/verti/lib/python3.12/site-packages/torch/storage.py:414: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  return torch.load(io.BytesIO(b))
+Training consists of 1023 samples, and validation consists of 235 samples.
+12:25:16 - INITIALIZING the model!
+2025-04-29 12:25:16 - INITIALIZING the optimizer!
+2025-04-29 12:25:16 - Number of parameters: 11.35M
+2025-04-29 12:25:16 - Number of trainable parameters: 11.35M
+Epoch 001/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 001/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.00205, loss=236]Epoch 001/050, training:  25%|██▌       | 1/4 [00:00<00:01,  1.55it/s, Grad_Norm=1, Time=0.00205, loss=236]Epoch 001/050, training:  25%|██▌       | 1/4 [00:00<00:01,  1.55it/s, Grad_Norm=1, Time=9.82e-5, loss=223]Epoch 001/050, training:  25%|██▌       | 1/4 [00:00<00:01,  1.55it/s, Grad_Norm=1, Time=9.04e-5, loss=237]Epoch 001/050, training:  25%|██▌       | 1/4 [00:00<00:01,  1.55it/s, Grad_Norm=1, Time=0.000741, loss=243]Epoch 001/050, training: 100%|██████████| 4/4 [00:00<00:00,  5.35it/s, Grad_Norm=1, Time=0.000741, loss=243]Epoch 001/050, training: 100%|██████████| 4/4 [00:00<00:00,  4.43it/s, Grad_Norm=1, Time=0.000741, loss=243]
+Epoch 001/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 001/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=8.98]Epoch 001/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.43it/s, loss=8.98]Epoch 001/050, validating: 100%|██████████| 1/1 [00:00<00:00,  4.64it/s, loss=8.98]
+2025-04-29 12:25:17 Epoch 001, Iteration 00004 summary: train Loss: 234.924     | Val
+loss: 8.980       | time: 0.001 seconds
+
+Checkpoint Directory does not exist! Making directory vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 002/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 002/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000112, loss=226]Epoch 002/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.41it/s, Grad_Norm=1, Time=0.000112, loss=226]Epoch 002/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.41it/s, Grad_Norm=1, Time=9.11e-5, loss=244] Epoch 002/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.41it/s, Grad_Norm=1, Time=9.08e-5, loss=231]Epoch 002/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.41it/s, Grad_Norm=1, Time=9.15e-5, loss=226]Epoch 002/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.57it/s, Grad_Norm=1, Time=9.15e-5, loss=226]
+Epoch 002/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 002/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=8.74]Epoch 002/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.54it/s, loss=8.74]Epoch 002/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.34it/s, loss=8.74]
+2025-04-29 12:25:18 Epoch 002, Iteration 00008 summary: train Loss: 231.678     | Val
+loss: 8.743       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E2 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 003/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 003/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000109, loss=233]Epoch 003/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.52it/s, Grad_Norm=1, Time=0.000109, loss=233]Epoch 003/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.52it/s, Grad_Norm=1, Time=9.47e-5, loss=243] Epoch 003/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.52it/s, Grad_Norm=1, Time=9.31e-5, loss=220]Epoch 003/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.52it/s, Grad_Norm=1, Time=9.44e-5, loss=222]Epoch 003/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.95it/s, Grad_Norm=1, Time=9.44e-5, loss=222]
+Epoch 003/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 003/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=8.55]Epoch 003/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.42it/s, loss=8.55]Epoch 003/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.35it/s, loss=8.55]
+2025-04-29 12:25:19 Epoch 003, Iteration 00012 summary: train Loss: 229.654     | Val
+loss: 8.546       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E3 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 004/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 004/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000109, loss=230]Epoch 004/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.40it/s, Grad_Norm=1, Time=0.000109, loss=230]Epoch 004/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.40it/s, Grad_Norm=1, Time=9.51e-5, loss=260] Epoch 004/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.40it/s, Grad_Norm=1, Time=9.41e-5, loss=202]Epoch 004/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.40it/s, Grad_Norm=1, Time=9.38e-5, loss=220]Epoch 004/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.62it/s, Grad_Norm=1, Time=9.38e-5, loss=220]
+Epoch 004/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 004/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=8.36]Epoch 004/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.67it/s, loss=8.36]Epoch 004/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.35it/s, loss=8.36]
+2025-04-29 12:25:21 Epoch 004, Iteration 00016 summary: train Loss: 227.968     | Val
+loss: 8.359       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E4 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 005/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 005/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000109, loss=229]Epoch 005/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.52it/s, Grad_Norm=1, Time=0.000109, loss=229]Epoch 005/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.52it/s, Grad_Norm=1, Time=9.91e-5, loss=239] Epoch 005/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.52it/s, Grad_Norm=1, Time=9.4e-5, loss=210] Epoch 005/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.52it/s, Grad_Norm=1, Time=9.43e-5, loss=226]Epoch 005/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.61it/s, Grad_Norm=1, Time=9.43e-5, loss=226]
+Epoch 005/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 005/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=8.18]Epoch 005/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.96it/s, loss=8.18]Epoch 005/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.71it/s, loss=8.18]
+2025-04-29 12:25:22 Epoch 005, Iteration 00020 summary: train Loss: 226.154     | Val
+loss: 8.181       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E5 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 006/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 006/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000112, loss=231]Epoch 006/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.48it/s, Grad_Norm=1, Time=0.000112, loss=231]Epoch 006/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.48it/s, Grad_Norm=1, Time=9.48e-5, loss=232] Epoch 006/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.48it/s, Grad_Norm=1, Time=9.26e-5, loss=217]Epoch 006/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.48it/s, Grad_Norm=1, Time=9.38e-5, loss=218]Epoch 006/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.85it/s, Grad_Norm=1, Time=9.38e-5, loss=218]
+Epoch 006/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 006/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=8.01]Epoch 006/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.86it/s, loss=8.01]Epoch 006/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.57it/s, loss=8.01]
+2025-04-29 12:25:23 Epoch 006, Iteration 00024 summary: train Loss: 224.554     | Val
+loss: 8.012       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E6 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 007/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 007/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000112, loss=222]Epoch 007/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.39it/s, Grad_Norm=1, Time=0.000112, loss=222]Epoch 007/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.39it/s, Grad_Norm=1, Time=9.28e-5, loss=198] Epoch 007/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.39it/s, Grad_Norm=1, Time=9.29e-5, loss=225]Epoch 007/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.39it/s, Grad_Norm=1, Time=9.41e-5, loss=246]Epoch 007/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.62it/s, Grad_Norm=1, Time=9.41e-5, loss=246]
+Epoch 007/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 007/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=7.85]Epoch 007/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.85it/s, loss=7.85]Epoch 007/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.50it/s, loss=7.85]
+2025-04-29 12:25:24 Epoch 007, Iteration 00028 summary: train Loss: 222.756     | Val
+loss: 7.851       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E7 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 008/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 008/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000113, loss=217]Epoch 008/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.51it/s, Grad_Norm=1, Time=0.000113, loss=217]Epoch 008/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.51it/s, Grad_Norm=1, Time=9.63e-5, loss=199] Epoch 008/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.51it/s, Grad_Norm=1, Time=9.41e-5, loss=226]Epoch 008/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.51it/s, Grad_Norm=1, Time=9.45e-5, loss=242]Epoch 008/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.79it/s, Grad_Norm=1, Time=9.45e-5, loss=242]
+Epoch 008/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 008/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=7.7]Epoch 008/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.50it/s, loss=7.7]Epoch 008/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.42it/s, loss=7.7]
+2025-04-29 12:25:26 Epoch 008, Iteration 00032 summary: train Loss: 221.170     | Val
+loss: 7.696       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E8 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 009/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 009/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000113, loss=223]Epoch 009/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.38it/s, Grad_Norm=1, Time=0.000113, loss=223]Epoch 009/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.38it/s, Grad_Norm=1, Time=9.5e-5, loss=211]  Epoch 009/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.38it/s, Grad_Norm=1, Time=9.28e-5, loss=224]Epoch 009/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.38it/s, Grad_Norm=1, Time=9.5e-5, loss=220] Epoch 009/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.47it/s, Grad_Norm=1, Time=9.5e-5, loss=220]
+Epoch 009/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 009/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=7.55]Epoch 009/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.59it/s, loss=7.55]Epoch 009/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.42it/s, loss=7.55]
+2025-04-29 12:25:27 Epoch 009, Iteration 00036 summary: train Loss: 219.494     | Val
+loss: 7.548       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E9 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 010/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 010/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000113, loss=214]Epoch 010/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.62it/s, Grad_Norm=1, Time=0.000113, loss=214]Epoch 010/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.62it/s, Grad_Norm=1, Time=9.51e-5, loss=235] Epoch 010/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.62it/s, Grad_Norm=1, Time=9.46e-5, loss=203]Epoch 010/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.62it/s, Grad_Norm=1, Time=9.42e-5, loss=219]Epoch 010/050, training: 100%|██████████| 4/4 [00:00<00:00, 14.07it/s, Grad_Norm=1, Time=9.42e-5, loss=219]
+Epoch 010/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 010/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=7.41]Epoch 010/050, validating: 100%|██████████| 1/1 [00:00<00:00,  7.05it/s, loss=7.41]Epoch 010/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.57it/s, loss=7.41]
+2025-04-29 12:25:28 Epoch 010, Iteration 00040 summary: train Loss: 217.889     | Val
+loss: 7.406       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E10 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 011/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 011/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000118, loss=229]Epoch 011/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.36it/s, Grad_Norm=1, Time=0.000118, loss=229]Epoch 011/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.36it/s, Grad_Norm=1, Time=9.35e-5, loss=204] Epoch 011/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.36it/s, Grad_Norm=1, Time=9.44e-5, loss=236]Epoch 011/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.36it/s, Grad_Norm=1, Time=9.56e-5, loss=195]Epoch 011/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.61it/s, Grad_Norm=1, Time=9.56e-5, loss=195]
+Epoch 011/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 011/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=7.27]Epoch 011/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.33it/s, loss=7.27]Epoch 011/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.17it/s, loss=7.27]
+2025-04-29 12:25:30 Epoch 011, Iteration 00044 summary: train Loss: 216.105     | Val
+loss: 7.269       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E11 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 012/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 012/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000115, loss=222]Epoch 012/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.36it/s, Grad_Norm=1, Time=0.000115, loss=222]Epoch 012/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.36it/s, Grad_Norm=1, Time=9.48e-5, loss=202] Epoch 012/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.36it/s, Grad_Norm=1, Time=9.47e-5, loss=236]Epoch 012/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.36it/s, Grad_Norm=1, Time=9.46e-5, loss=199]Epoch 012/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.46it/s, Grad_Norm=1, Time=9.46e-5, loss=199]
+Epoch 012/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 012/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=7.14]Epoch 012/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.47it/s, loss=7.14]Epoch 012/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.32it/s, loss=7.14]
+2025-04-29 12:25:31 Epoch 012, Iteration 00048 summary: train Loss: 214.517     | Val
+loss: 7.140       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E12 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 013/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 013/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000109, loss=220]Epoch 013/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.43it/s, Grad_Norm=1, Time=0.000109, loss=220]Epoch 013/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.43it/s, Grad_Norm=1, Time=9.51e-5, loss=214] Epoch 013/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.43it/s, Grad_Norm=1, Time=9.26e-5, loss=202]Epoch 013/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.43it/s, Grad_Norm=1, Time=9.5e-5, loss=214] Epoch 013/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.76it/s, Grad_Norm=1, Time=9.5e-5, loss=214]
+Epoch 013/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 013/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=7.02]Epoch 013/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.57it/s, loss=7.02]Epoch 013/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.31it/s, loss=7.02]
+2025-04-29 12:25:32 Epoch 013, Iteration 00052 summary: train Loss: 212.617     | Val
+loss: 7.019       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E13 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 014/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 014/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.00011, loss=208]Epoch 014/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.44it/s, Grad_Norm=1, Time=0.00011, loss=208]Epoch 014/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.44it/s, Grad_Norm=1, Time=9.23e-5, loss=197]Epoch 014/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.44it/s, Grad_Norm=1, Time=9.33e-5, loss=221]Epoch 014/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.44it/s, Grad_Norm=1, Time=9.39e-5, loss=218]Epoch 014/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.61it/s, Grad_Norm=1, Time=9.39e-5, loss=218]
+Epoch 014/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 014/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=6.9]Epoch 014/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.14it/s, loss=6.9]Epoch 014/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.08it/s, loss=6.9]
+2025-04-29 12:25:34 Epoch 014, Iteration 00056 summary: train Loss: 211.047     | Val
+loss: 6.904       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E14 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 015/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 015/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000111, loss=214]Epoch 015/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.30it/s, Grad_Norm=1, Time=0.000111, loss=214]Epoch 015/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.30it/s, Grad_Norm=1, Time=9.48e-5, loss=211] Epoch 015/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.30it/s, Grad_Norm=1, Time=9.53e-5, loss=204]Epoch 015/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.30it/s, Grad_Norm=1, Time=9.55e-5, loss=209]Epoch 015/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.40it/s, Grad_Norm=1, Time=9.55e-5, loss=209]
+Epoch 015/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 015/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=6.79]Epoch 015/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.56it/s, loss=6.79]Epoch 015/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.38it/s, loss=6.79]
+2025-04-29 12:25:35 Epoch 015, Iteration 00060 summary: train Loss: 209.469     | Val
+loss: 6.793       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E15 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 016/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 016/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000109, loss=225]Epoch 016/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.39it/s, Grad_Norm=1, Time=0.000109, loss=225]Epoch 016/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.39it/s, Grad_Norm=1, Time=9.84e-5, loss=192] Epoch 016/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.39it/s, Grad_Norm=1, Time=9.34e-5, loss=201]Epoch 016/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.39it/s, Grad_Norm=1, Time=9.31e-5, loss=213]Epoch 016/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.64it/s, Grad_Norm=1, Time=9.31e-5, loss=213]
+Epoch 016/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 016/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=6.69]Epoch 016/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.32it/s, loss=6.69]Epoch 016/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.10it/s, loss=6.69]
+2025-04-29 12:25:36 Epoch 016, Iteration 00064 summary: train Loss: 207.674     | Val
+loss: 6.692       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E16 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 017/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 017/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.00011, loss=213]Epoch 017/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.40it/s, Grad_Norm=1, Time=0.00011, loss=213]Epoch 017/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.40it/s, Grad_Norm=1, Time=9.42e-5, loss=198]Epoch 017/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.40it/s, Grad_Norm=1, Time=9.37e-5, loss=195]Epoch 017/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.40it/s, Grad_Norm=1, Time=9.32e-5, loss=220]Epoch 017/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.64it/s, Grad_Norm=1, Time=9.32e-5, loss=220]
+Epoch 017/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 017/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=6.6]Epoch 017/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.72it/s, loss=6.6]Epoch 017/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.44it/s, loss=6.6]
+2025-04-29 12:25:38 Epoch 017, Iteration 00068 summary: train Loss: 206.255     | Val
+loss: 6.600       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E17 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 018/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 018/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000114, loss=199]Epoch 018/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.35it/s, Grad_Norm=1, Time=0.000114, loss=199]Epoch 018/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.35it/s, Grad_Norm=1, Time=9.51e-5, loss=213] Epoch 018/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.35it/s, Grad_Norm=1, Time=9.27e-5, loss=190]Epoch 018/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.35it/s, Grad_Norm=1, Time=9.3e-5, loss=215] Epoch 018/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.38it/s, Grad_Norm=1, Time=9.3e-5, loss=215]
+Epoch 018/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 018/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=6.52]Epoch 018/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.31it/s, loss=6.52]Epoch 018/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.25it/s, loss=6.52]
+2025-04-29 12:25:39 Epoch 018, Iteration 00072 summary: train Loss: 204.342     | Val
+loss: 6.517       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E18 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 019/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 019/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.00011, loss=206]Epoch 019/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.58it/s, Grad_Norm=1, Time=0.00011, loss=206]Epoch 019/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.58it/s, Grad_Norm=1, Time=9.49e-5, loss=194]Epoch 019/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.58it/s, Grad_Norm=1, Time=9.43e-5, loss=194]Epoch 019/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.58it/s, Grad_Norm=1, Time=9.45e-5, loss=218]Epoch 019/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.90it/s, Grad_Norm=1, Time=9.45e-5, loss=218]
+Epoch 019/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 019/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=6.44]Epoch 019/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.55it/s, loss=6.44]Epoch 019/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.29it/s, loss=6.44]
+2025-04-29 12:25:40 Epoch 019, Iteration 00076 summary: train Loss: 202.668     | Val
+loss: 6.443       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E19 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 020/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 020/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000117, loss=194]Epoch 020/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.75it/s, Grad_Norm=1, Time=0.000117, loss=194]Epoch 020/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.75it/s, Grad_Norm=1, Time=9.46e-5, loss=203] Epoch 020/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.75it/s, Grad_Norm=1, Time=9.34e-5, loss=194]Epoch 020/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.75it/s, Grad_Norm=1, Time=9.54e-5, loss=214]Epoch 020/050, training: 100%|██████████| 4/4 [00:00<00:00, 14.04it/s, Grad_Norm=1, Time=9.54e-5, loss=214]
+Epoch 020/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 020/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=6.38]Epoch 020/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.50it/s, loss=6.38]Epoch 020/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.33it/s, loss=6.38]
+2025-04-29 12:25:41 Epoch 020, Iteration 00080 summary: train Loss: 201.274     | Val
+loss: 6.376       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E20 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 021/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 021/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000111, loss=204]Epoch 021/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.38it/s, Grad_Norm=1, Time=0.000111, loss=204]Epoch 021/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.38it/s, Grad_Norm=1, Time=9.56e-5, loss=186] Epoch 021/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.38it/s, Grad_Norm=1, Time=9.29e-5, loss=205]Epoch 021/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.38it/s, Grad_Norm=1, Time=9.48e-5, loss=203]Epoch 021/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.68it/s, Grad_Norm=1, Time=9.48e-5, loss=203]
+Epoch 021/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 021/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=6.31]Epoch 021/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.58it/s, loss=6.31]Epoch 021/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.39it/s, loss=6.31]
+2025-04-29 12:25:43 Epoch 021, Iteration 00084 summary: train Loss: 199.605     | Val
+loss: 6.314       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E21 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 022/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 022/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000113, loss=196]Epoch 022/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.37it/s, Grad_Norm=1, Time=0.000113, loss=196]Epoch 022/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.37it/s, Grad_Norm=1, Time=9.37e-5, loss=204] Epoch 022/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.37it/s, Grad_Norm=1, Time=9.42e-5, loss=202]Epoch 022/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.37it/s, Grad_Norm=1, Time=9.36e-5, loss=189]Epoch 022/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.74it/s, Grad_Norm=1, Time=9.36e-5, loss=189]
+Epoch 022/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 022/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=6.25]Epoch 022/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.07it/s, loss=6.25]Epoch 022/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.02it/s, loss=6.25]
+2025-04-29 12:25:44 Epoch 022, Iteration 00088 summary: train Loss: 197.939     | Val
+loss: 6.254       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E22 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 023/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 023/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000112, loss=182]Epoch 023/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.52it/s, Grad_Norm=1, Time=0.000112, loss=182]Epoch 023/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.52it/s, Grad_Norm=1, Time=9.59e-5, loss=198] Epoch 023/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.52it/s, Grad_Norm=1, Time=9.31e-5, loss=186]Epoch 023/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.52it/s, Grad_Norm=1, Time=9.33e-5, loss=222]Epoch 023/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.72it/s, Grad_Norm=1, Time=9.33e-5, loss=222]
+Epoch 023/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 023/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=6.2]Epoch 023/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.92it/s, loss=6.2]Epoch 023/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.47it/s, loss=6.2]
+2025-04-29 12:25:45 Epoch 023, Iteration 00092 summary: train Loss: 196.835     | Val
+loss: 6.201       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E23 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 024/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 024/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000111, loss=190]Epoch 024/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.50it/s, Grad_Norm=1, Time=0.000111, loss=190]Epoch 024/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.50it/s, Grad_Norm=1, Time=9.43e-5, loss=196] Epoch 024/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.50it/s, Grad_Norm=1, Time=9.31e-5, loss=194]Epoch 024/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.50it/s, Grad_Norm=1, Time=9.27e-5, loss=201]Epoch 024/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.71it/s, Grad_Norm=1, Time=9.27e-5, loss=201]
+Epoch 024/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 024/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=6.16]Epoch 024/050, validating: 100%|██████████| 1/1 [00:00<00:00,  7.13it/s, loss=6.16]Epoch 024/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.70it/s, loss=6.16]
+2025-04-29 12:25:47 Epoch 024, Iteration 00096 summary: train Loss: 195.351     | Val
+loss: 6.156       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E24 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 025/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 025/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.00011, loss=197]Epoch 025/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.48it/s, Grad_Norm=1, Time=0.00011, loss=197]Epoch 025/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.48it/s, Grad_Norm=1, Time=9.51e-5, loss=166]Epoch 025/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.48it/s, Grad_Norm=1, Time=9.29e-5, loss=200]Epoch 025/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.48it/s, Grad_Norm=1, Time=9.49e-5, loss=214]Epoch 025/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.62it/s, Grad_Norm=1, Time=9.49e-5, loss=214]
+Epoch 025/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 025/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=6.12]Epoch 025/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.90it/s, loss=6.12]Epoch 025/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.61it/s, loss=6.12]
+2025-04-29 12:25:48 Epoch 025, Iteration 00100 summary: train Loss: 194.263     | Val
+loss: 6.115       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E25 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 026/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 026/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000112, loss=186]Epoch 026/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.21it/s, Grad_Norm=1, Time=0.000112, loss=186]Epoch 026/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.21it/s, Grad_Norm=1, Time=9.58e-5, loss=190] Epoch 026/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.21it/s, Grad_Norm=1, Time=9.24e-5, loss=198]Epoch 026/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.21it/s, Grad_Norm=1, Time=9.47e-5, loss=197]Epoch 026/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.21it/s, Grad_Norm=1, Time=9.47e-5, loss=197]
+Epoch 026/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 026/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=6.08]Epoch 026/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.16it/s, loss=6.08]Epoch 026/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.04it/s, loss=6.08]
+2025-04-29 12:25:49 Epoch 026, Iteration 00104 summary: train Loss: 192.892     | Val
+loss: 6.082       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E26 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 027/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 027/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000109, loss=182]Epoch 027/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.34it/s, Grad_Norm=1, Time=0.000109, loss=182]Epoch 027/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.34it/s, Grad_Norm=1, Time=9.33e-5, loss=195] Epoch 027/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.34it/s, Grad_Norm=1, Time=9.34e-5, loss=194]Epoch 027/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.34it/s, Grad_Norm=1, Time=9.38e-5, loss=196]Epoch 027/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.62it/s, Grad_Norm=1, Time=9.38e-5, loss=196]
+Epoch 027/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 027/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=6.06]Epoch 027/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.18it/s, loss=6.06]Epoch 027/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.03it/s, loss=6.06]
+2025-04-29 12:25:51 Epoch 027, Iteration 00108 summary: train Loss: 191.792     | Val
+loss: 6.055       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E27 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 028/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 028/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000117, loss=189]Epoch 028/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.25it/s, Grad_Norm=1, Time=0.000117, loss=189]Epoch 028/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.25it/s, Grad_Norm=1, Time=9.8e-5, loss=210]  Epoch 028/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.25it/s, Grad_Norm=1, Time=9.72e-5, loss=182]Epoch 028/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.25it/s, Grad_Norm=1, Time=9.82e-5, loss=180]Epoch 028/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.18it/s, Grad_Norm=1, Time=9.82e-5, loss=180]
+Epoch 028/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 028/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=6.03]Epoch 028/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.16it/s, loss=6.03]Epoch 028/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.07it/s, loss=6.03]
+2025-04-29 12:25:52 Epoch 028, Iteration 00112 summary: train Loss: 190.306     | Val
+loss: 6.035       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E28 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 029/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 029/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000121, loss=195]Epoch 029/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.15it/s, Grad_Norm=1, Time=0.000121, loss=195]Epoch 029/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.15it/s, Grad_Norm=1, Time=9.69e-5, loss=195] Epoch 029/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.15it/s, Grad_Norm=1, Time=0.000102, loss=177]Epoch 029/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.15it/s, Grad_Norm=1, Time=9.73e-5, loss=192] Epoch 029/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.01it/s, Grad_Norm=1, Time=9.73e-5, loss=192]
+Epoch 029/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 029/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=6.02]Epoch 029/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.29it/s, loss=6.02]Epoch 029/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.18it/s, loss=6.02]
+2025-04-29 12:25:54 Epoch 029, Iteration 00116 summary: train Loss: 189.777     | Val
+loss: 6.019       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E29 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 030/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 030/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000118, loss=205]Epoch 030/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.17it/s, Grad_Norm=1, Time=0.000118, loss=205]Epoch 030/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.17it/s, Grad_Norm=1, Time=9.69e-5, loss=167] Epoch 030/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.17it/s, Grad_Norm=1, Time=9.74e-5, loss=197]Epoch 030/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.17it/s, Grad_Norm=1, Time=9.88e-5, loss=185]Epoch 030/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.04it/s, Grad_Norm=1, Time=9.88e-5, loss=185]
+Epoch 030/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 030/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=6.01]Epoch 030/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.00it/s, loss=6.01]Epoch 030/050, validating: 100%|██████████| 1/1 [00:00<00:00,  4.94it/s, loss=6.01]
+2025-04-29 12:25:57 Epoch 030, Iteration 00120 summary: train Loss: 188.450     | Val
+loss: 6.009       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E30 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 031/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 031/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000114, loss=178]Epoch 031/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.13it/s, Grad_Norm=1, Time=0.000114, loss=178]Epoch 031/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.13it/s, Grad_Norm=1, Time=9.68e-5, loss=201] Epoch 031/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.13it/s, Grad_Norm=1, Time=9.7e-5, loss=196] Epoch 031/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.13it/s, Grad_Norm=1, Time=9.78e-5, loss=179]Epoch 031/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.16it/s, Grad_Norm=1, Time=9.78e-5, loss=179]
+Epoch 031/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 031/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=6]Epoch 031/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.42it/s, loss=6]Epoch 031/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.27it/s, loss=6]
+2025-04-29 12:25:58 Epoch 031, Iteration 00124 summary: train Loss: 188.240     | Val
+loss: 6.001       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E31 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 032/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 032/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000118, loss=187]Epoch 032/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.19it/s, Grad_Norm=1, Time=0.000118, loss=187]Epoch 032/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.19it/s, Grad_Norm=1, Time=9.65e-5, loss=169] Epoch 032/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.19it/s, Grad_Norm=1, Time=9.33e-5, loss=186]Epoch 032/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.19it/s, Grad_Norm=1, Time=9.29e-5, loss=207]Epoch 032/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.44it/s, Grad_Norm=1, Time=9.29e-5, loss=207]
+Epoch 032/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 032/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=6]Epoch 032/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.26it/s, loss=6]Epoch 032/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.21it/s, loss=6]
+2025-04-29 12:26:00 Epoch 032, Iteration 00128 summary: train Loss: 187.269     | Val
+loss: 5.996       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E32 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 033/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 033/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000112, loss=183]Epoch 033/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.27it/s, Grad_Norm=1, Time=0.000112, loss=183]Epoch 033/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.27it/s, Grad_Norm=1, Time=9.37e-5, loss=212] Epoch 033/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.27it/s, Grad_Norm=1, Time=9.35e-5, loss=171]Epoch 033/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.27it/s, Grad_Norm=1, Time=9.39e-5, loss=180]Epoch 033/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.39it/s, Grad_Norm=1, Time=9.39e-5, loss=180]
+Epoch 033/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 033/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=5.99]Epoch 033/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.71it/s, loss=5.99]Epoch 033/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.53it/s, loss=5.99]
+2025-04-29 12:26:01 Epoch 033, Iteration 00132 summary: train Loss: 186.235     | Val
+loss: 5.994       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E33 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 034/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 034/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.00011, loss=174]Epoch 034/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.39it/s, Grad_Norm=1, Time=0.00011, loss=174]Epoch 034/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.39it/s, Grad_Norm=1, Time=9.53e-5, loss=179]Epoch 034/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.39it/s, Grad_Norm=1, Time=9.34e-5, loss=188]Epoch 034/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.39it/s, Grad_Norm=1, Time=9.4e-5, loss=200] Epoch 034/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.62it/s, Grad_Norm=1, Time=9.4e-5, loss=200]
+Epoch 034/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 034/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=5.99]Epoch 034/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.40it/s, loss=5.99]Epoch 034/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.17it/s, loss=5.99]
+2025-04-29 12:26:02 Epoch 034, Iteration 00136 summary: train Loss: 185.514     | Val
+loss: 5.992       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E34 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 035/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 035/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000112, loss=189]Epoch 035/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.37it/s, Grad_Norm=1, Time=0.000112, loss=189]Epoch 035/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.37it/s, Grad_Norm=1, Time=9.36e-5, loss=195] Epoch 035/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.37it/s, Grad_Norm=1, Time=9.49e-5, loss=175]Epoch 035/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.37it/s, Grad_Norm=1, Time=9.32e-5, loss=182]Epoch 035/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.52it/s, Grad_Norm=1, Time=9.32e-5, loss=182]
+Epoch 035/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 035/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=5.99]Epoch 035/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.62it/s, loss=5.99]Epoch 035/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.41it/s, loss=5.99]
+2025-04-29 12:26:04 Epoch 035, Iteration 00140 summary: train Loss: 185.082     | Val
+loss: 5.993       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E35 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 036/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 036/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000117, loss=193]Epoch 036/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.31it/s, Grad_Norm=1, Time=0.000117, loss=193]Epoch 036/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.31it/s, Grad_Norm=1, Time=9.87e-5, loss=173] Epoch 036/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.31it/s, Grad_Norm=1, Time=9.63e-5, loss=183]Epoch 036/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.31it/s, Grad_Norm=1, Time=9.66e-5, loss=189]Epoch 036/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.39it/s, Grad_Norm=1, Time=9.66e-5, loss=189]
+Epoch 036/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 036/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=5.99]Epoch 036/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.19it/s, loss=5.99]Epoch 036/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.10it/s, loss=5.99]
+2025-04-29 12:26:05 Epoch 036, Iteration 00144 summary: train Loss: 184.607     | Val
+loss: 5.994       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E36 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 037/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 037/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000116, loss=188]Epoch 037/050, training:  25%|██▌       | 1/4 [00:00<00:00,  4.96it/s, Grad_Norm=1, Time=0.000116, loss=188]Epoch 037/050, training:  25%|██▌       | 1/4 [00:00<00:00,  4.96it/s, Grad_Norm=1, Time=9.81e-5, loss=194] Epoch 037/050, training:  25%|██▌       | 1/4 [00:00<00:00,  4.96it/s, Grad_Norm=1, Time=9.71e-5, loss=167]Epoch 037/050, training:  25%|██▌       | 1/4 [00:00<00:00,  4.96it/s, Grad_Norm=1, Time=9.84e-5, loss=188]Epoch 037/050, training: 100%|██████████| 4/4 [00:00<00:00, 12.71it/s, Grad_Norm=1, Time=9.84e-5, loss=188]
+Epoch 037/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 037/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=6]Epoch 037/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.49it/s, loss=6]Epoch 037/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.26it/s, loss=6]
+2025-04-29 12:26:08 Epoch 037, Iteration 00148 summary: train Loss: 184.255     | Val
+loss: 5.996       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E37 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 038/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 038/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000117, loss=173]Epoch 038/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.09it/s, Grad_Norm=1, Time=0.000117, loss=173]Epoch 038/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.09it/s, Grad_Norm=1, Time=9.9e-5, loss=191]  Epoch 038/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.09it/s, Grad_Norm=1, Time=9.83e-5, loss=198]Epoch 038/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.09it/s, Grad_Norm=1, Time=9.8e-5, loss=172] Epoch 038/050, training: 100%|██████████| 4/4 [00:00<00:00, 12.90it/s, Grad_Norm=1, Time=9.8e-5, loss=172]
+Epoch 038/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 038/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=6]Epoch 038/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.30it/s, loss=6]Epoch 038/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.03it/s, loss=6]
+2025-04-29 12:26:10 Epoch 038, Iteration 00152 summary: train Loss: 183.667     | Val
+loss: 5.998       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E38 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 039/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 039/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000117, loss=159]Epoch 039/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.27it/s, Grad_Norm=1, Time=0.000117, loss=159]Epoch 039/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.27it/s, Grad_Norm=1, Time=9.7e-5, loss=207]  Epoch 039/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.27it/s, Grad_Norm=1, Time=9.53e-5, loss=194]Epoch 039/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.27it/s, Grad_Norm=1, Time=9.62e-5, loss=174]Epoch 039/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.39it/s, Grad_Norm=1, Time=9.62e-5, loss=174]
+Epoch 039/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 039/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=6]Epoch 039/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.56it/s, loss=6]Epoch 039/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.24it/s, loss=6]
+2025-04-29 12:26:13 Epoch 039, Iteration 00156 summary: train Loss: 183.416     | Val
+loss: 6.001       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E39 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 040/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 040/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000116, loss=190]Epoch 040/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.25it/s, Grad_Norm=1, Time=0.000116, loss=190]Epoch 040/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.25it/s, Grad_Norm=1, Time=9.93e-5, loss=191] Epoch 040/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.25it/s, Grad_Norm=1, Time=9.64e-5, loss=178]Epoch 040/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.25it/s, Grad_Norm=1, Time=9.84e-5, loss=175]Epoch 040/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.10it/s, Grad_Norm=1, Time=9.84e-5, loss=175]
+Epoch 040/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 040/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=6]Epoch 040/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.32it/s, loss=6]Epoch 040/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.33it/s, loss=6]
+2025-04-29 12:26:15 Epoch 040, Iteration 00160 summary: train Loss: 183.598     | Val
+loss: 6.003       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E40 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 041/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 041/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000111, loss=201]Epoch 041/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.36it/s, Grad_Norm=1, Time=0.000111, loss=201]Epoch 041/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.36it/s, Grad_Norm=1, Time=9.8e-5, loss=178]  Epoch 041/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.36it/s, Grad_Norm=1, Time=9.28e-5, loss=171]Epoch 041/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.36it/s, Grad_Norm=1, Time=9.31e-5, loss=180]Epoch 041/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.43it/s, Grad_Norm=1, Time=9.31e-5, loss=180]
+Epoch 041/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 041/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=6]Epoch 041/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.50it/s, loss=6]Epoch 041/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.31it/s, loss=6]
+2025-04-29 12:26:15 Epoch 041, Iteration 00164 summary: train Loss: 182.311     | Val
+loss: 6.005       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E41 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 042/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 042/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000118, loss=186]Epoch 042/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.50it/s, Grad_Norm=1, Time=0.000118, loss=186]Epoch 042/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.50it/s, Grad_Norm=1, Time=9.64e-5, loss=177] Epoch 042/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.50it/s, Grad_Norm=1, Time=9.37e-5, loss=178]Epoch 042/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.50it/s, Grad_Norm=1, Time=9.32e-5, loss=191]Epoch 042/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.72it/s, Grad_Norm=1, Time=9.32e-5, loss=191]
+Epoch 042/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 042/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=6.01]Epoch 042/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.76it/s, loss=6.01]Epoch 042/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.52it/s, loss=6.01]
+2025-04-29 12:26:17 Epoch 042, Iteration 00168 summary: train Loss: 182.917     | Val
+loss: 6.007       | time: 0.001 seconds
+
+Epoch 043/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 043/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000111, loss=190]Epoch 043/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.47it/s, Grad_Norm=1, Time=0.000111, loss=190]Epoch 043/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.47it/s, Grad_Norm=1, Time=9.58e-5, loss=168] Epoch 043/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.47it/s, Grad_Norm=1, Time=9.45e-5, loss=194]Epoch 043/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.47it/s, Grad_Norm=1, Time=9.52e-5, loss=177]Epoch 043/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.87it/s, Grad_Norm=1, Time=9.52e-5, loss=177]
+Epoch 043/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 043/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=6.01]Epoch 043/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.46it/s, loss=6.01]Epoch 043/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.19it/s, loss=6.01]
+2025-04-29 12:26:17 Epoch 043, Iteration 00172 summary: train Loss: 182.398     | Val
+loss: 6.009       | time: 0.001 seconds
+
+Epoch 044/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 044/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.00011, loss=181]Epoch 044/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.51it/s, Grad_Norm=1, Time=0.00011, loss=181]Epoch 044/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.51it/s, Grad_Norm=1, Time=9.48e-5, loss=168]Epoch 044/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.51it/s, Grad_Norm=1, Time=9.42e-5, loss=195]Epoch 044/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.51it/s, Grad_Norm=1, Time=9.34e-5, loss=186]Epoch 044/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.69it/s, Grad_Norm=1, Time=9.34e-5, loss=186]
+Epoch 044/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 044/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=6.01]Epoch 044/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.48it/s, loss=6.01]Epoch 044/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.23it/s, loss=6.01]
+2025-04-29 12:26:18 Epoch 044, Iteration 00176 summary: train Loss: 182.354     | Val
+loss: 6.010       | time: 0.001 seconds
+
+Epoch 045/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 045/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000111, loss=183]Epoch 045/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.61it/s, Grad_Norm=1, Time=0.000111, loss=183]Epoch 045/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.61it/s, Grad_Norm=1, Time=9.52e-5, loss=163] Epoch 045/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.61it/s, Grad_Norm=1, Time=9.36e-5, loss=196]Epoch 045/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.61it/s, Grad_Norm=1, Time=9.43e-5, loss=189]Epoch 045/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.96it/s, Grad_Norm=1, Time=9.43e-5, loss=189]
+Epoch 045/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 045/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=6.01]Epoch 045/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.68it/s, loss=6.01]Epoch 045/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.42it/s, loss=6.01]
+2025-04-29 12:26:18 Epoch 045, Iteration 00180 summary: train Loss: 182.696     | Val
+loss: 6.011       | time: 0.001 seconds
+
+Epoch 046/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 046/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000111, loss=171]Epoch 046/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.54it/s, Grad_Norm=1, Time=0.000111, loss=171]Epoch 046/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.54it/s, Grad_Norm=1, Time=9.57e-5, loss=183] Epoch 046/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.54it/s, Grad_Norm=1, Time=9.32e-5, loss=180]Epoch 046/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.54it/s, Grad_Norm=1, Time=9.41e-5, loss=193]Epoch 046/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.69it/s, Grad_Norm=1, Time=9.41e-5, loss=193]
+Epoch 046/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 046/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=6.01]Epoch 046/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.50it/s, loss=6.01]Epoch 046/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.26it/s, loss=6.01]
+2025-04-29 12:26:19 Epoch 046, Iteration 00184 summary: train Loss: 181.952     | Val
+loss: 6.012       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E46 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 047/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 047/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000113, loss=205]Epoch 047/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.51it/s, Grad_Norm=1, Time=0.000113, loss=205]Epoch 047/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.51it/s, Grad_Norm=1, Time=9.51e-5, loss=171] Epoch 047/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.51it/s, Grad_Norm=1, Time=9.47e-5, loss=178]Epoch 047/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.51it/s, Grad_Norm=1, Time=9.56e-5, loss=175]Epoch 047/050, training: 100%|██████████| 4/4 [00:00<00:00, 13.82it/s, Grad_Norm=1, Time=9.56e-5, loss=175]
+Epoch 047/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 047/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=6.01]Epoch 047/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.60it/s, loss=6.01]Epoch 047/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.39it/s, loss=6.01]
+2025-04-29 12:26:20 Epoch 047, Iteration 00188 summary: train Loss: 182.257     | Val
+loss: 6.012       | time: 0.001 seconds
+
+Epoch 048/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 048/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000113, loss=197]Epoch 048/050, training:  25%|██▌       | 1/4 [00:00<00:00,  4.94it/s, Grad_Norm=1, Time=0.000113, loss=197]Epoch 048/050, training:  25%|██▌       | 1/4 [00:00<00:00,  4.94it/s, Grad_Norm=1, Time=9.66e-5, loss=176] Epoch 048/050, training:  25%|██▌       | 1/4 [00:00<00:00,  4.94it/s, Grad_Norm=1, Time=9.24e-5, loss=192]Epoch 048/050, training:  25%|██▌       | 1/4 [00:00<00:00,  4.94it/s, Grad_Norm=1, Time=9.32e-5, loss=162]Epoch 048/050, training: 100%|██████████| 4/4 [00:00<00:00, 12.76it/s, Grad_Norm=1, Time=9.32e-5, loss=162]
+Epoch 048/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 048/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=6.01]Epoch 048/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.98it/s, loss=6.01]Epoch 048/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.64it/s, loss=6.01]
+2025-04-29 12:26:21 Epoch 048, Iteration 00192 summary: train Loss: 181.941     | Val
+loss: 6.012       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E48 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 049/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 049/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000119, loss=178]Epoch 049/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.00it/s, Grad_Norm=1, Time=0.000119, loss=178]Epoch 049/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.00it/s, Grad_Norm=1, Time=9.9e-5, loss=182]  Epoch 049/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.00it/s, Grad_Norm=1, Time=9.61e-5, loss=172]Epoch 049/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.00it/s, Grad_Norm=1, Time=9.59e-5, loss=196]Epoch 049/050, training: 100%|██████████| 4/4 [00:00<00:00, 12.81it/s, Grad_Norm=1, Time=9.59e-5, loss=196]
+Epoch 049/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 049/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=6.01]Epoch 049/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.66it/s, loss=6.01]Epoch 049/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.43it/s, loss=6.01]
+2025-04-29 12:26:23 Epoch 049, Iteration 00196 summary: train Loss: 181.877     | Val
+loss: 6.013       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E49 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+Epoch 050/050, training:   0%|          | 0/4 [00:00<?, ?it/s]Epoch 050/050, training:   0%|          | 0/4 [00:00<?, ?it/s, Grad_Norm=1, Time=0.000114, loss=182]Epoch 050/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.21it/s, Grad_Norm=1, Time=0.000114, loss=182]Epoch 050/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.21it/s, Grad_Norm=1, Time=9.77e-5, loss=179] Epoch 050/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.21it/s, Grad_Norm=1, Time=9.74e-5, loss=199]Epoch 050/050, training:  25%|██▌       | 1/4 [00:00<00:00,  5.21it/s, Grad_Norm=1, Time=9.91e-5, loss=168]Epoch 050/050, training: 100%|██████████| 4/4 [00:00<00:00, 12.96it/s, Grad_Norm=1, Time=9.91e-5, loss=168]
+Epoch 050/050, validating:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 050/050, validating:   0%|          | 0/1 [00:00<?, ?it/s, loss=6.01]Epoch 050/050, validating: 100%|██████████| 1/1 [00:00<00:00,  6.59it/s, loss=6.01]Epoch 050/050, validating: 100%|██████████| 1/1 [00:00<00:00,  5.36it/s, loss=6.01]
+2025-04-29 12:26:24 Epoch 050, Iteration 00200 summary: train Loss: 181.995     | Val
+loss: 6.013       | time: 0.001 seconds
+
+Checkpoint Directory exists! Saving vanilla-1-ikd-04-29-12-25-E50 in vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+2025-04-29 12:26:25 - Training is DONE!
+COMET INFO: ---------------------------------------------------------------------------------------
+COMET INFO: Comet.ml Experiment Summary
+COMET INFO: ---------------------------------------------------------------------------------------
+COMET INFO:   Data:
+COMET INFO:     display_summary_level : 1
+COMET INFO:     name                  : vanilla-1-ikd-04-29-12-25
+COMET INFO:     url                   : https://www.comet.com/coder-adonis/server-vertiencoder/2da80080d97f4841bc7e4e47b0619b49
+COMET INFO:   Metrics [count] (min, max):
+COMET INFO:     batch_loss [200] : (158.52786254882812, 259.64764404296875)
+COMET INFO:     grad_norm [200]  : (0.9999998623583382, 1.0000001394366456)
+COMET INFO:     loss [21]        : (167.66592407226562, 242.96954345703125)
+COMET INFO:     time [50]        : (0.000750171807471742, 0.0009211260207155918)
+COMET INFO:     train_loss [50]  : (181.87655639648438, 234.92367553710938)
+COMET INFO:     val_loss [50]    : (5.992354393005371, 8.980026245117188)
+COMET INFO:   Others:
+COMET INFO:     Name            : vanilla-1-ikd-04-29-12-25
+COMET INFO:     hasNestedParams : True
+COMET INFO:   Parameters:
+COMET INFO:     adamw|amsgrad                            : False
+COMET INFO:     adamw|betas                              : [0.9, 0.999]
+COMET INFO:     adamw|eps                                : 1e-08
+COMET INFO:     adamw|lr                                 : 0.0005
+COMET INFO:     adamw|weight_decay                       : 0.05
+COMET INFO:     adam|amsgrad                             : False
+COMET INFO:     adam|betas                               : [0.9, 0.999]
+COMET INFO:     adam|eps                                 : 1e-08
+COMET INFO:     adam|lr                                  : 0.0005
+COMET INFO:     adam|weight_decay                        : 0
+COMET INFO:     dataloader|batch_size                    : 256
+COMET INFO:     dataloader|num_workers                   : 8
+COMET INFO:     dataloader|pin_memory                    : False
+COMET INFO:     dataloader|shuffle                       : True
+COMET INFO:     dataset|f_size                           : 7
+COMET INFO:     dataset|height_diff                      : 0.5
+COMET INFO:     dataset|root                             : vertiencoder/data/train/data_train.pkl
+COMET INFO:     dataset|stats                            : vertiencoder/data/train/stats.pkl
+COMET INFO:     dataset|task                             : ikd
+COMET INFO:     dataset|train                            : True
+COMET INFO:     directory|load                           : vertiencoder/checkpoint/vanilla/model-name-best.pt
+COMET INFO:     directory|model_name                     : vanilla-1-ikd-04-29-12-25
+COMET INFO:     directory|save                           : vertiencoder/checkpoint/vanilla/vanilla-1-ikd-04-29-12-25
+COMET INFO:     init_model|gain                          : 1.0
+COMET INFO:     init_model|high                          : 1.0
+COMET INFO:     init_model|low                           : 0.0
+COMET INFO:     init_model|mean                          : 0.0
+COMET INFO:     init_model|method                        : kaiming_normal
+COMET INFO:     init_model|mode                          : fan_in
+COMET INFO:     init_model|nonlinearity                  : leaky_relu
+COMET INFO:     init_model|std                           : 0.05
+COMET INFO:     logger|auto_histogram_activation_logging : True
+COMET INFO:     logger|auto_histogram_gradient_logging   : True
+COMET INFO:     logger|auto_histogram_weight_logging     : True
+COMET INFO:     logger|disabled                          : False
+COMET INFO:     logger|experiment_key                    : 
+COMET INFO:     logger|experiment_name                   : vanilla-1-ikd-04-29-12-25
+COMET INFO:     logger|log_env_details                   : False
+COMET INFO:     logger|offline_directory                 : ./logs
+COMET INFO:     logger|online                            : True
+COMET INFO:     logger|project                           : server-vertiencoder
+COMET INFO:     logger|resume                            : False
+COMET INFO:     logger|tags                              : ae train
+COMET INFO:     logger|upload_model                      : False
+COMET INFO:     logger|workspace                         : mhnazeri
+COMET INFO:     model|bc_model|act                       : leakyrelu
+COMET INFO:     model|bc_model|bias                      : False
+COMET INFO:     model|bc_model|dims                      : [64, 32, 16]
+COMET INFO:     model|bc_model|dropout                   : 0.6
+COMET INFO:     model|bc_model|l_act                     : False
+COMET INFO:     model|bc_model|norm                      : ln
+COMET INFO:     model|fkd_model|act                      : leakyrelu
+COMET INFO:     model|fkd_model|bias                     : False
+COMET INFO:     model|fkd_model|dims                     : [64, 32, 16]
+COMET INFO:     model|fkd_model|dropout                  : 0.2
+COMET INFO:     model|fkd_model|l_act                    : False
+COMET INFO:     model|fkd_model|norm                     : ln
+COMET INFO:     model|ikd_model|fc|act                   : tanh
+COMET INFO:     model|ikd_model|fc|bias                  : False
+COMET INFO:     model|ikd_model|fc|dims                  : [512, 256, 128, 64, 32, 16]
+COMET INFO:     model|ikd_model|fc|dropout               : 0.2
+COMET INFO:     model|ikd_model|fc|l_act                 : False
+COMET INFO:     model|ikd_model|fc|norm                  : ln
+COMET INFO:     model|ikd_model|pose|act                 : leakyrelu
+COMET INFO:     model|ikd_model|pose|bias                : False
+COMET INFO:     model|ikd_model|pose|dims                : [6, 64, 32, 16]
+COMET INFO:     model|ikd_model|pose|dropout             : 0.2
+COMET INFO:     model|ikd_model|pose|l_act               : False
+COMET INFO:     model|ikd_model|pose|norm                : ln
+COMET INFO:     rmsprop|alpha                            : 0.99
+COMET INFO:     rmsprop|centered                         : False
+COMET INFO:     rmsprop|eps                              : 1e-08
+COMET INFO:     rmsprop|lr                               : 0.001
+COMET INFO:     rmsprop|momentum                         : 0
+COMET INFO:     rmsprop|weight_decay                     : 0
+COMET INFO:     sgd|dampening                            : 0
+COMET INFO:     sgd|lr                                   : 0.001
+COMET INFO:     sgd|momentum                             : 0
+COMET INFO:     sgd|nesterov                             : False
+COMET INFO:     sgd|weight_decay                         : 0
+COMET INFO:     train_len                                : 1023
+COMET INFO:     train_params|compile                     : True
+COMET INFO:     train_params|debug                       : False
+COMET INFO:     train_params|device                      : cuda:0
+COMET INFO:     train_params|epochs                      : 50
+COMET INFO:     train_params|grad_clipping               : 1.0
+COMET INFO:     train_params|optimizer                   : adamw
+COMET INFO:     train_params|save_every                  : 10
+COMET INFO:     train_params|seed                        : 42
+COMET INFO:     train_params|start_saving_best           : 1
+COMET INFO:     val_dataset|root                         : vertiencoder/data/val/data_val.pkl
+COMET INFO:     val_dataset|task                         : ikd
+COMET INFO:     val_dataset|train                        : False
+COMET INFO:     val_len                                  : 235
+COMET INFO:   Uploads:
+COMET INFO:     filename                 : 1
+COMET INFO:     git metadata             : 1
+COMET INFO:     git-patch (uncompressed) : 1 (1.50 KB)
+COMET INFO:     model graph              : 1
+COMET INFO:     source_code              : 8 (52.66 KB)
+COMET INFO: 
+Done.
